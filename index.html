@@ -8,6 +8,7 @@
 
     <!-- ....................Custom Css Link.................... -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -97,16 +98,14 @@
 
             <div class="about-right">
 
-                <div class="basic-edu">
+                <!-- <div class="basic-edu">
                     <a href="" class="btn btn-dark" id="download" download="assets/cv/CV.pdf">Download CV</a>
-                </div>
+                </div> -->
                 <p>
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum eaque harum deleniti quibusdam sed delectus velit nobis cumque officiis, labore, perferendis hic repudiandae. Dolorem, earum neque. A corporis ut veritatis provident. Voluptatem magnam
-                    eos ratione doloribus nam praesentium maiores.
-                </p>
-            </div>
-        </div>
+                    Suba Jo! Saya seorang mahasiswa dari Universitas Khairun di Kota Ternate. Saat ini, sedang menjalani serunya program pertukaran pelajar di Universitas Pasundan, Kota Bandung. Saya sangat antusias dalam menjelajahi teknologi, percaya bahwa tiap langkah
+                    membawa kesempatan baru untuk belajar. Pengalaman ini bukan hanya soal ilmu di kelas, tapi juga memperluas pandangan tentang keberagaman budaya yang menginspirasi. Yuk, kita cari lebih banyak pengetahuan dan cerita yang bisa kita bagi
+                    bareng! Lewat program ini, saya bisa merasakan betul keberagaman budaya dan bertemu orang-orang luar biasa. Ini nggak cuma buka pandangan soal keberagaman, tapi juga buat saya ngerti banyak hal di dunia. Makasih sudah mampir ke profil
+                    saya, ayo kita saling tuker pengalaman dan pengetahuan
     </section>
     <!-- ....................End About Section.................... -->
 
@@ -122,7 +121,7 @@
                 <div>
                     <h2>My Skills</h2>
                 </div>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ab laudantium possimus molestias sapiente, saepe facilis dolore autem repellat, quo iure tempore nisi perspiciatis. Quasi?
+                <p class="text">Saya berupaya untuk terus meningkatkan pengetahuan dalam skill-skill yang saya miliki
                 </p>
             </div>
             <div class="container skill-container">
@@ -203,7 +202,7 @@
             <!-- <a href="#Projects" class="arrow"><img src="assets/icons/icons8-curved-arrow-down-50.png" class="icon1"></a> -->
             <!-- <p class="heading-p"></p> -->
             <h1 class="heading" style="padding-top: 75px;">Projects</h1>
-            <div class="container project-container">
+            <div class="container project-container" data-aos="fade-up-right" data-aos-delay="300">
                 <div class="project">
                     <img src="assets/img/projeck.png" alt="">
                     <h3>Aplikasi Desktop</h3>
@@ -212,19 +211,19 @@
                         <a href="" class="btn">Lihat</a>
                     </div>
                 </div>
-                <div class="project">
-                    <img src="assets/img/project-2.png" alt="">
-                    <h3>Project 2</h3>
-                    <p>Aplikasi ini dibuat pada semester 3 dengan bahasa pemrograman python dengan library tkinter</p>
+                <div class="project" data-aos="fade-up" data-aos-delay="600">
+                    <img src="assets/img/projek-2.jpg" alt="">
+                    <h3>Laundry</h3>
+                    <p>Aplikasi ini dibuat pada semester 4 dengan bahasa pemrograman Java</p>
                     <div class="header-action-aria">
                         <!-- <a href="" class="btn">Github</a> -->
                         <a href="" class="btn">Lihat</a>
                     </div>
                 </div>
-                <div class="project">
-                    <img src="assets/img/project-3.png" alt="">
-                    <h3>Project 3</h3>
-                    <p>Aplikasi ini dibuat pada semester 3 dengan bahasa pemrograman python dengan library tkinter</p>
+                <div class="project" data-aos="fade-up-left" data-aos-delay="900">
+                    <img src="assets/img/projek-3.jpg" alt="">
+                    <h3>Kalkulator</h3>
+                    <p>Aplikasi ini dibuat pada semester 1 dengan bahasa pemrograman python </p>
                     <div class="header-action-aria">
                         <a href="" class="btn">Lihat</a>
                     </div>
@@ -239,11 +238,23 @@
             <!-- <a href="#Contact" class="arrow"><img src="assets/icons/icons8-curved-arrow-down-50.png" class="icon1"></a> -->
             <p class="heading-p">Get in Touch</p>
             <h1 class="heading">Contact Me</h1>
-            <div class="contact-container container">
+            <form class="form-form container" action="#" method="post">
+                <label class="label-form" for="nama">Nama:</label>
+                <input class="input-form" type="text" id="nama" name="nama" required>
+
+                <label class="label-form" for="email">Email:</label>
+                <input class="input-form" type="email" id="email" name="email" required>
+
+                <label class="label-form" for="pesan">Pesan:</label>
+                <textarea class="input-form-pesan" id="pesan" name="pesan" rows="4" required></textarea>
+
+                <button class="btn btn-dark button-form" type="submit">Kirim</button>
+            </form>
+            <!-- <div class="contact-container container">
                 <div class="email">
                     <img src="assets/img/email.png" class="icon1">
-                    <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=astriimhdnur@gmail.com">
-                        <h5>astriiMhdnur@gmail.com</h5>
+                    <a href="">
+                        <h5>astriMnur@gmail.com</h5>
                     </a>
                 </div>
                 <div class="linkedin">
@@ -252,6 +263,12 @@
                         <h5>AstriMnur</h5>
                     </a>
                 </div>
+            </div> -->
+
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
             </div>
         </section>
         <!-- ....................End Contact Section.................... -->
