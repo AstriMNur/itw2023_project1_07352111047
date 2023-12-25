@@ -104,7 +104,7 @@ a {
 }
 
 a:hover {
-    color: aqua;
+    color: rgb(0, 30, 255);
     text-decoration-color: #555555;
     text-underline-offset: 1rem;
     text-decoration: underline;
@@ -205,7 +205,7 @@ nav {
 /* untuk logo atau nama portofolio */
 
 .logo {
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     font-weight: bold;
     text-decoration: none !important;
